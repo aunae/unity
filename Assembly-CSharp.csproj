@@ -56,6 +56,7 @@
      <Compile Include="Assets\ball.cs" />
      <Compile Include="Assets\BallSpawner.cs" />
      <Compile Include="Assets\Coin.cs" />
+     <Compile Include="Assets\CoinSpawner.cs" />
      <Compile Include="Assets\Game Manager.cs" />
      <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\SceneChange.cs" />

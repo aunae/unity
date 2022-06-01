@@ -6,7 +6,13 @@ public class ball : MonoBehaviour
 {
     public float GRAVITY = 7.0f;
 
-    private float mVelocity = 3.0f;
+    private float mVelocity = 1.0f;
+
+    void OntriggerEnter(Collider col)
+    {
+
+      
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +27,10 @@ public class ball : MonoBehaviour
 
         current.y -= mVelocity * Time.deltaTime;
         this.transform.position = current;
-       /* if(transform.position.y < 0.3f)
+        if (transform.position.y < 0.88f)
         {
             Destroy(gameObject);
-        }*/
+        }
     }
+
 }
