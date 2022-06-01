@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallSpawner : MonoBehaviour
 {
-    const float CREATE_INTERVAL = 5f;
+    const float CREATE_INTERVAL = 1.5f;
     float mCreatTime = 0;
     float mTotalTIme = 0;
 
