@@ -16,7 +16,12 @@ public class Player : MonoBehaviour
         {
             CapC.gameObject.SetActive(false);
         }
-    } 
+       /* if (CapC.GameObject.CompareTag("Enemy"))
+        //부딪힌 객체의 태그를 비교해서 적인지 판단합니다.
+        {
+            SceneManager.LoadScene("gameoversence");
+        }*/
+    }
 
     // Update is called once per frame
     void Update()
@@ -39,5 +44,6 @@ public class Player : MonoBehaviour
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
         }
+       
     }
 }

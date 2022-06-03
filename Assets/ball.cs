@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ball : MonoBehaviour
 {
+    GameObject clonedestory;
     public float GRAVITY = 7.0f;
 
     private float mVelocity = 1.0f;
@@ -27,9 +28,10 @@ public class ball : MonoBehaviour
 
         current.y -= mVelocity * Time.deltaTime;
         this.transform.position = current;
-        if (transform.position.y < 0.88f)
+        if (transform.position.y < 1.3f)
         {
-            Destroy(gameObject);
+            clonedestory = GameObject.Find("ball(Clone)"); //이름으로 찾기
+            Destroy(clonedestory); //찾은 이름 파괴
         }
     }
 
